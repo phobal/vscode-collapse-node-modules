@@ -13,4 +13,4 @@ use hotkey `cmd + control + c`, then the node_modules folder will be collapse
 1. open vscode command panel, you can use `cmd + shift + p`  
 2. input `collapse`, and select the `Collapse: collapse node_modules folder` option
 
-enjoin
+enjoy !!!
