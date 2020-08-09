@@ -3,7 +3,7 @@
 	"displayName": "vscode-collapse-node_modules",
 	"description": "use hotkey(ctrl+cmd+c) to collapse your node_modules folder",
 	"repository": "https://github.com/phobal/vscode-collapse-node-modules.git",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"publisher": "phobal",
 	"engines": {
 		"vscode": "^1.47.0"
