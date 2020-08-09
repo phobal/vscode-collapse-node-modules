@@ -1,7 +1,8 @@
 {
 	"name": "collapse-node-modules",
 	"displayName": "collapse-node_modules",
-	"description": "collapse your node_modules folder",
+	"description": "use hotkey(ctrl+cmd+c) to collapse your node_modules folder",
+	"repository": "https://github.com/phobal/vscode-collapse-node-modules.git",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.47.0"
@@ -10,16 +11,23 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:collapse-node-modules.helloWorld"
+    "onCommand:collapse-node-modules.collapse"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "collapse-node-modules.helloWorld",
-				"title": "Hello World"
+				"command": "collapse-node-modules.collapse",
+				"title": "Collapse: collapse node_modules folder"
 			}
-		]
+		],
+		"keybindings": [
+      {
+        "command": "collapse-node-modules.collapse",
+        "key": "ctrl+win+c",
+        "mac": "ctrl+cmd+c"
+      }
+    ]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
