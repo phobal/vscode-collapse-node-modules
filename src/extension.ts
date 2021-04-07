@@ -3,19 +3,21 @@ import * as vscode from 'vscode';
 const nodeModulesPaths = '**/node_modules'
 
 let config = vscode.workspace.getConfiguration()
-let excluded = config.get('files.exclude', {} as Record<string, boolean>)
+let excluded: Record<string, boolean> | undefined
 
-function removeNodeModulesFolder() {
-	excluded[nodeModulesPaths] = true
-	config.update('files.exclude', excluded)
+async function removeNodeModulesFolder() {
+	await config.update('files.exclude', {
+		...excluded,
+		[nodeModulesPaths]: true
+	}, vscode.ConfigurationTarget.Global)
 }
 
-function addNodeModulesFolder() {
-	excluded[nodeModulesPaths] = false
-	config.update('files.exclude', excluded)
+async function addNodeModulesFolder() {
+	await config.update('files.exclude', excluded, vscode.ConfigurationTarget.Global)
 }
 
 async function collapse() {
+	excluded = config.inspect<Record<string, boolean> | undefined>('files.exclude')?.globalValue;
 	await removeNodeModulesFolder()
 	await addNodeModulesFolder()
 }
