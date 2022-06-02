@@ -1,5 +1,9 @@
 # Collapse node_modules for Visual Studio Code
 
+[![MarketPlace Tag](https://vsmarketplacebadge.apphb.com/version-short/phobal.vscode-collapse-node-modules.svg)](https://vsmarketplacebadge.apphb.com/version-short/phobal.vscode-collapse-node-modules.svg)
+
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/phobal.vscode-collapse-node-modules?style=plastic)
+
 [🔽Download](https://marketplace.visualstudio.com/items?itemName=phobal.vscode-collapse-node-modules)
 ## How to use
 
