@@ -32,6 +32,7 @@
 		]
 	},
 	"scripts": {
+    "deploy": "vsce publish",
     "package": "vsce package",
 		"prepublish": "yarn compile",
 		"compile": "tsc -p ./",
