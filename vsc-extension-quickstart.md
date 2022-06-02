@@ -7,7 +7,7 @@ we can support two ways for use it
 
 ### The First
 
-use hotkey `cmd + control + c`, then the node_modules folder will be collapse
+use hotkey `ctrl+win+c`(windows) or `ctrl+cmd+c`(mac), then the node_modules folder will be collapse
 
 ### The Second
 
